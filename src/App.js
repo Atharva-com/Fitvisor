@@ -10,6 +10,7 @@ import Membership from './pages/Membership';
 import rectangle from '../src/images/Rectangle 37.png'
 import blob from '../src/images/blob-haikei-removebg-preview.png'
 import Demo from './pages/Demo';
+import Room from './pages/Room';
 function App() {
   return (
     <div className='background'>
@@ -31,13 +32,13 @@ function App() {
       />
 
       <Routes>
-
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/nutrionists" element={<Nutrionists />}></Route>
         <Route path="/fitlight" element={<Fitlight />}></Route>
         <Route path="/membership" element={<Membership />}></Route>
         <Route path="/demo" element={<Demo />}></Route>
+        <Route path="/demo/room/:roomId" element={<Room />}></Route>
 
       </Routes>
 
