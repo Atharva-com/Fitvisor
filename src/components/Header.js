@@ -18,7 +18,7 @@ const Header = () => {
 
                 </div>
 
-                {/* <Navbar /> */}
+                <Navbar />
 
                 <div className='flex gap-x-2 items-center'>
 
