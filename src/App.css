@@ -1,12 +1,33 @@
-
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.background {
+  background: linear-gradient(
+    175.58deg,
+    #8160fb ,
+    rgba(157, 135, 237, 0.7) 111%
+  ) !important;
+}
+
+.carousel{
+  height: 30rem;
+}
+
+@media (min-width: 768px) {
+  .carousel{
+    height: 32rem;
   }
-  
-  @media (min-width: 640px) {
-    .background{
-      background: linear-gradient(175.58deg, #8160FB 1.39%, rgba(157, 135, 237, 0.7) 111%) !important;
-    }
+}
+
+@media (min-width: 1024px) {
+  .carousel{
+    height: 35rem;
   }
+}
+
+.dot{
+  background: #31255e !important;
+}

@@ -9,13 +9,14 @@ import Fitlight from './pages/Fitlight';
 import Membership from './pages/Membership';
 import rectangle from '../src/images/Rectangle 37.png'
 import blob from '../src/images/blob-haikei-removebg-preview.png'
+import Home from './components/Home';
 import Demo from './pages/Demo';
 import Room from './pages/Room';
 function App() {
   return (
     <div className='background'>
 
-      {/* <img src={blob} alt="" className='absolute z-[-1] md:opacity-100 md:flex hidden opacity-60' /> */}
+      <img src={blob} alt="" className='absolute z-[-1] md:opacity-100 md:flex hidden opacity-60' />
       {/* <img src={rectangle} alt="" className='absolute z-[-1] md:hidden top-0 w-full' /> */}
 
       <ToastContainer
@@ -31,7 +32,11 @@ function App() {
         theme="dark"
       />
 
+      {/* <Header /> */}
+
       <Routes>
+
+        <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/nutrionists" element={<Nutrionists />}></Route>

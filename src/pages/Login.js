@@ -41,7 +41,7 @@ const Login = () => {
 
     return (
         // login section
-        <div className="h-[100vh] w-[100vw] relative bg-cover overflow-hidden flex justify-center md:justify-start items-center px-0 md:px-10 lg:px-20 xl:px-28" style={{ background: 'linear-gradient(175.58deg, #8160FB 1.39%, rgba(157, 135, 237, 0.7) 111%)' }}>
+        <div className="h-[100vh] w-[100vw] relative bg-cover overflow-hidden flex justify-center md:justify-start items-center px-0 md:px-10 lg:px-20 xl:px-28">
 
             <div className="h-auto w-auto bg-clip-padding bg-white bg-opacity-20 backdrop-filter backdrop-blur-[3px] rounded-[2rem] sm:rounded-2xl shadow-xl relative z-2 border-0 pb-4 px-4">
 
