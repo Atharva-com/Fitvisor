@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FcGoogle } from 'react-icons/fc'
@@ -6,24 +7,38 @@ import logo from '../images/logo home.png'
 
 const Login = () => {
 
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
 
-    const handleChange = (e) => {
-        if (e.target.name === 'email') {
-            setEmail(e.target.value)
-        }
-        else if (e.target.name === 'password') {
-            setPassword(e.target.value)
-        }
-    }
+    const [credentials, setCredentials] = useState({ email: "", password: "" });
+    const { email, password } = credentials;
+    const history = useNavigate();
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        setEmail("")
-        setPassword("")
+        e.preventDefault();
+        const response = await fetch(`http://localhost:8000/api/auth/userlogin`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email, password }),
+        });
+
+        const json = await response.json();
+        if (json.success) {
+            localStorage.setItem('token', json.authtoken);
+            history('/');
+            alert('success')
+        }
+        else {
+            alert('fail');
+
+        }
 
     }
+
+    const handleChange = (e) => {
+        setCredentials({ ...credentials, [e.target.name]: e.target.value })
+    }
+
     return (
         // login section
         <div className="h-[100vh] w-[100vw] relative bg-cover overflow-hidden flex justify-center md:justify-start items-center px-0 md:px-10 lg:px-20 xl:px-28">

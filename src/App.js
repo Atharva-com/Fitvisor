@@ -9,8 +9,12 @@ import Fitlight from './pages/Fitlight';
 import Membership from './pages/Membership';
 import rectangle from '../src/images/Rectangle 37.png'
 import blob from '../src/images/blob-haikei-removebg-preview.png'
+<<<<<<< HEAD
 import Home from './components/Home';
 
+=======
+import Demo from './pages/Demo';
+>>>>>>> 71959abe1b333b74d3a39afd3a46669f01538112
 function App() {
   return (
     <div className='background'>
@@ -41,6 +45,7 @@ function App() {
         <Route path="/nutrionists" element={<Nutrionists />}></Route>
         <Route path="/fitlight" element={<Fitlight />}></Route>
         <Route path="/membership" element={<Membership />}></Route>
+        <Route path="/demo" element={<Demo />}></Route>
 
       </Routes>
 
