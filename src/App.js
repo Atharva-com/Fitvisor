@@ -11,7 +11,7 @@ import rectangle from '../src/images/Rectangle 37.png'
 import blob from '../src/images/blob-haikei-removebg-preview.png'
 import Home from './components/Home';
 import Demo from './pages/Demo';
-import ModalProvider from './Providers/ModalProvider';
+import Room from './pages/Room';
 function App() {
   return (
     <div className='background'>
@@ -45,6 +45,7 @@ function App() {
         <Route path="/fitlight" element={<Fitlight />}></Route>
         <Route path="/membership" element={<Membership />}></Route>
         <Route path="/demo" element={<Demo />}></Route>
+        <Route path="/demo/room/:roomId" element={<Room />}></Route>
 
       </Routes>
 
