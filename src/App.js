@@ -13,6 +13,7 @@ import Home from './components/Home';
 import Demo from './pages/Demo';
 import Room from './pages/Room';
 import Content from './pages/Content';
+import ModalProvider from '../src/Providers/ModalProvider'
 
 function App() {
   return (
