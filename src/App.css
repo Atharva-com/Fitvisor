@@ -4,16 +4,23 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.background {
-  background: linear-gradient(
-    175.58deg,
-    #8160fb ,
-    rgba(157, 135, 237, 0.7) 111%
-  ) !important;
+@media (min-width: 640px) {
+  
+  .background {
+    background: linear-gradient(
+      175.58deg,
+      #8160fb ,
+      rgba(157, 135, 237, 0.7) 111%
+    ) !important;
+  }
+
+  /* .background{
+    background: white;
+  } */
 }
 
 .carousel{
-  height: 30rem;
+  height: 20rem;
 }
 
 @media (min-width: 768px) {
