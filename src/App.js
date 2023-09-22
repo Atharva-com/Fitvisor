@@ -12,6 +12,8 @@ import blob from '../src/images/blob-haikei-removebg-preview.png'
 import Home from './components/Home';
 import Demo from './pages/Demo';
 import Room from './pages/Room';
+import Content from './pages/Content';
+
 function App() {
   return (
     <div className='background'>
@@ -44,6 +46,7 @@ function App() {
         <Route path="/membership" element={<Membership />}></Route>
         <Route path="/demo" element={<Demo />}></Route>
         <Route path="/demo/room/:roomId" element={<Room />}></Route>
+        <Route path="/content" element={<Content />}></Route>
 
       </Routes>
 
