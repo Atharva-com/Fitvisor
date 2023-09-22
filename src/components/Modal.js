@@ -26,7 +26,7 @@ const Modal = ({
           <Dialog.Close asChild>
 
             <button
-              className="text-[#31255e] absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:outline-none" aria-label="Close"
+              className="text-[#31255e] absolute z-[500] top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:outline-none" aria-label="Close"
             >
               <IoMdClose className='text-3xl' />
             </button>

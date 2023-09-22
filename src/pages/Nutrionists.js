@@ -13,7 +13,7 @@ const Nutrionists = () => {
 
       <div>
 
-        <div className='flex flex-col sm:gap-y-1 relative bottom-8'>
+        <div className='flex flex-col sm:gap-y-1 relative bottom-8 z-[100]'>
 
           {/* Heading */}
           <h1 className="text-[#31255e] font-bold text-[2.5rem] md:text-5xl tracking-wider text-center sm:px-0 px-4">
@@ -28,14 +28,14 @@ const Nutrionists = () => {
 
         <div className='w-full h-full flex items-center justify-center my-6'>
 
-          <fitness src={fitness} alt="" className='w-3/4 rounded-lg sm:flex hidden' />
+          <img src={fitness} alt=" " className='w-3/4 rounded-lg sm:flex hidden' />
 
-          <fitness src={fitnessM} alt="" className='w-full rounded-lg flex sm:hidden' />
+          <img src={fitnessM} alt=" " className='w-full rounded-lg flex sm:hidden' />
 
         </div>
 
 
-        <div className="flex flex-col items-center justify-center lg:my-[5.5rem] sm:my-[3.5rem] my-6">
+        <div className="flex flex-col items-center justify-center lg:my-[5.5rem] sm:my-[3.5rem] my-6 pb-8">
 
           <div className="flex flex-wrap flex-col items-center text-center gap-y-4 mt-0 mb-6 sm:mb-10 lg:mb-14">
 
@@ -45,23 +45,23 @@ const Nutrionists = () => {
 
           <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 lg:gap-12">
 
-            <div className='flex flex-col gap-y-2 md:p-4'>
+            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border-2 border-white rounded-lg" style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg">
 
                 {/* <!-- Left Div --> */}
-                <div class="flex flex-col">
+                <div class="flex flex-col items-center justify-center">
 
                   {/* <!-- Image --> */}
-                  <img src={profile} alt="Profile Image" class="w-16 h-16 rounded-full" />
+                  <img src={profile} alt=" " class="w-16 h-16 rounded-full" />
 
                   {/* <!-- Rating Stars --> */}
                   <div class="ml-2">
                     {/* <!-- You can replace this with your rating component or icons --> */}
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
                     <span class="text-gray-400">☆</span>
                   </div>
                 </div>
@@ -79,31 +79,31 @@ const Nutrionists = () => {
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-between items-center w-full px-2 md:px-6">
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Chat</button>
-                <button class="bg-gray-500 text-white px-4 py-2 ml-2 rounded-lg">More</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 rounded-lg">Chat</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 ml-2 rounded-lg">More</button>
               </div>
 
             </div>
 
             {/* <!-- Second Div --> */}
 
-            <div className='flex flex-col gap-y-2 md:p-4'>
+            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border-2 border-white rounded-lg" style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg">
 
                 {/* <!-- Left Div --> */}
-                <div class="flex flex-col">
+                <div class="flex flex-col items-center justify-center">
 
                   {/* <!-- Image --> */}
-                  <img src={profile} alt="Profile Image" class="w-16 h-16 rounded-full" />
+                  <img src={profile} alt=" " class="w-16 h-16 rounded-full" />
 
                   {/* <!-- Rating Stars --> */}
                   <div class="ml-2">
                     {/* <!-- You can replace this with your rating component or icons --> */}
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
                     <span class="text-gray-400">☆</span>
                   </div>
                 </div>
@@ -121,8 +121,8 @@ const Nutrionists = () => {
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-between items-center w-full px-2 md:px-6">
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Chat</button>
-                <button class="bg-gray-500 text-white px-4 py-2 ml-2 rounded-lg">More</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 rounded-lg">Chat</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 ml-2 rounded-lg">More</button>
               </div>
 
             </div>
@@ -131,23 +131,23 @@ const Nutrionists = () => {
 
             {/* <!-- Third Div --> */}
 
-            <div className='flex flex-col gap-y-2 md:p-4'>
+            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border-2 border-white rounded-lg" style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg" >
 
                 {/* <!-- Left Div --> */}
-                <div class="flex flex-col">
+                <div class="flex flex-col items-center justify-center">
 
                   {/* <!-- Image --> */}
-                  <img src={profile} alt="Profile Image" class="w-16 h-16 rounded-full" />
+                  <img src={profile} alt=" " class="w-16 h-16 rounded-full" />
 
                   {/* <!-- Rating Stars --> */}
                   <div class="ml-2">
                     {/* <!-- You can replace this with your rating component or icons --> */}
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
                     <span class="text-gray-400">☆</span>
                   </div>
                 </div>
@@ -165,8 +165,8 @@ const Nutrionists = () => {
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-between items-center w-full px-2 md:px-6">
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Chat</button>
-                <button class="bg-gray-500 text-white px-4 py-2 ml-2 rounded-lg">More</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 rounded-lg">Chat</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 ml-2 rounded-lg">More</button>
               </div>
 
             </div>
@@ -175,23 +175,23 @@ const Nutrionists = () => {
 
             {/* <!-- Fourth Div --> */}
 
-            <div className='flex flex-col gap-y-2 md:p-4'>
+            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border-2 border-white rounded-lg" style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg">
 
                 {/* <!-- Left Div --> */}
-                <div class="flex flex-col">
+                <div class="flex flex-col items-center justify-center">
 
                   {/* <!-- Image --> */}
-                  <img src={profile} alt="Profile Image" class="w-16 h-16 rounded-full" />
+                  <img src={profile} alt=" " class="w-16 h-16 rounded-full" />
 
                   {/* <!-- Rating Stars --> */}
                   <div class="ml-2">
                     {/* <!-- You can replace this with your rating component or icons --> */}
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
                     <span class="text-gray-400">☆</span>
                   </div>
                 </div>
@@ -209,8 +209,8 @@ const Nutrionists = () => {
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-between items-center w-full px-2 md:px-6">
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Chat</button>
-                <button class="bg-gray-500 text-white px-4 py-2 ml-2 rounded-lg">More</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 rounded-lg">Chat</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 ml-2 rounded-lg">More</button>
               </div>
 
             </div>
@@ -219,23 +219,23 @@ const Nutrionists = () => {
 
             {/* <!-- Fifth Div --> */}
 
-            <div className='flex flex-col gap-y-2 md:p-4' >
+            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }} >
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border-2 border-white rounded-lg" style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg" >
 
                 {/* <!-- Left Div --> */}
-                <div class="flex flex-col">
+                <div class="flex flex-col items-center justify-center">
 
                   {/* <!-- Image --> */}
-                  <img src={profile} alt="Profile Image" class="w-16 h-16 rounded-full" />
+                  <img src={profile} alt=" " class="w-16 h-16 rounded-full" />
 
                   {/* <!-- Rating Stars --> */}
                   <div class="ml-2">
                     {/* <!-- You can replace this with your rating component or icons --> */}
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
                     <span class="text-gray-400">☆</span>
                   </div>
                 </div>
@@ -253,8 +253,8 @@ const Nutrionists = () => {
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-between items-center w-full px-2 md:px-6">
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Chat</button>
-                <button class="bg-gray-500 text-white px-4 py-2 ml-2 rounded-lg">More</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 rounded-lg">Chat</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 ml-2 rounded-lg">More</button>
               </div>
 
             </div>
@@ -263,23 +263,23 @@ const Nutrionists = () => {
 
             {/* <!-- Sixth Div --> */}
 
-            <div className='flex flex-col gap-y-2 md:p-4'>
+            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border-2 border-white rounded-lg" style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg" >
 
                 {/* <!-- Left Div --> */}
-                <div class="flex flex-col">
+                <div class="flex flex-col items-center justify-center">
 
                   {/* <!-- Image --> */}
-                  <img src={profile} alt="Profile Image" class="w-16 h-16 rounded-full" />
+                  <img src={profile} alt=" " class="w-16 h-16 rounded-full" />
 
                   {/* <!-- Rating Stars --> */}
                   <div class="ml-2">
                     {/* <!-- You can replace this with your rating component or icons --> */}
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
-                    <span class="text-yellow-500">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
+                    <span class="text-[#31255e]">★</span>
                     <span class="text-gray-400">☆</span>
                   </div>
                 </div>
@@ -297,8 +297,8 @@ const Nutrionists = () => {
 
               {/* <!-- Buttons --> */}
               <div class="flex justify-between items-center w-full px-2 md:px-6">
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Chat</button>
-                <button class="bg-gray-500 text-white px-4 py-2 ml-2 rounded-lg">More</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 rounded-lg">Chat</button>
+                <button class="bg-[#31255e] text-white px-4 py-2 ml-2 rounded-lg">More</button>
               </div>
 
             </div>

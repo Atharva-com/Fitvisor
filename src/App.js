@@ -12,6 +12,7 @@ import blob from '../src/images/blob-haikei-removebg-preview.png'
 import Home from './components/Home';
 import Demo from './pages/Demo';
 import Room from './pages/Room';
+import ModalProvider from './Providers/ModalProvider';
 function App() {
   return (
     <div className='background'>

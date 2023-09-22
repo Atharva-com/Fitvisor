@@ -125,7 +125,7 @@ const CameraModal = () => {
         setDisplayCroppedImage(true);
         setCapturedImageState(false)
         setloading(true)
-        
+
     };
 
     return (
@@ -136,12 +136,12 @@ const CameraModal = () => {
 
             {loading &&
 
-            <div className='flex items-center justify-center h-full w-full absolute z-[100] left-0 top-0'>
-                <DotSpinner
-                    size={40}
-                    speed={0.9}
-                    color="black"
-                /> 
+                <div className='flex items-center justify-center h-full w-full absolute z-[100] left-0 top-0'>
+                    <DotSpinner
+                        size={40}
+                        speed={0.9}
+                        color="black"
+                    />
                 </div>}
             {redirect ? (<>{cameraIsActive && (<div className="px-4 h-screen sm:h-auto w-full flex justify-center items-center absolute xl:top-[3%] top-0 left-0 right-0 bottom-0 m-auto">
 
@@ -241,13 +241,16 @@ const CameraModal = () => {
                     <h2 class="text-2xl font-semibold mb-4 text-[#31255e]">Select your product category</h2>
                     <div class="mx-auto max-w-md">
                         <div class="relative">
-                            <input
-                                type="text"
-                                value={inputValue}
-                                onChange={handleInputChange}
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#31255e]"
-                                placeholder="Search for a category"
-                            />
+                            <form >
+                                <input
+                                    type="text"
+                                    value={inputValue}
+                                    onChange={handleInputChange}
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#31255e]"
+                                    placeholder="Search for a category"
+                                    required
+                                />
+                            </form>
                         </div>
 
                         {/* <!-- Dropdown container --> */}
