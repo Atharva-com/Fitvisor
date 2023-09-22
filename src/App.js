@@ -18,8 +18,10 @@ function App() {
   return (
     <div className='background'>
 
+      <ModalProvider />
+
       <img src={blob} alt="" className='absolute z-[-1] md:opacity-100 md:flex hidden opacity-60' />
-      {/* <img src={rectangle} alt="" className='absolute z-[-1] md:hidden top-0 w-full' /> */}
+      <img src={rectangle} alt="" className='absolute z-[-1] md:hidden top-0 w-full' />
 
       <ToastContainer
         position="top-left"
@@ -41,7 +43,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/nutrionists" element={<Nutrionists />}></Route>
+        <Route path="/nutrionist" element={<Nutrionists />}></Route>
         <Route path="/fitlight" element={<Fitlight />}></Route>
         <Route path="/membership" element={<Membership />}></Route>
         <Route path="/demo" element={<Demo />}></Route>

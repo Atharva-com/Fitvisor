@@ -4,15 +4,24 @@ import { MdVerified } from 'react-icons/md'
 import { TfiVideoClapper } from 'react-icons/tfi'
 import { BiQrScan } from 'react-icons/bi'
 import { FaUserPlus } from 'react-icons/fa'
+import useCameraModal from '../helpers/useCameraModal';
 
 const Navbar = () => {
+
+  const cameraModal = useCameraModal()
+
+  // When user clicks on scan button this function runs
+
+  const handleCamera = () => {
+    return cameraModal.onOpen()
+  }
   return (
 
     <>
 
-      {/* Desktop */}
+      {/* Desktop Navbar */}
 
-      <nav className='sm:flex flex-col items-center gap-y-4 fixed h-max bottom-4 mt-auto z-50 top-0 left-0 w-full md:px-0 px-2 hidden'>
+      <nav className='sm:flex flex-col bg-[#8160fb] items-center gap-y-4 fixed h-max bottom-0 mt-auto z-50 top-0 left-0 w-full py-4 md:px-0 px-2 hidden' >
 
         <div className='flex w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 items-center justify-between px-8 md:px-16 h-[60px] sm:h-[60px] py-6 sm:bg-white/20 backdrop-blur-sm backdrop-filter text-3xl xl:text-xl rounded-full' style={{ background: 'linear-gradient(178.28deg, #B7A6F2 1.46%, #8160FB 195.63%)' }}>
 
@@ -78,7 +87,7 @@ const Navbar = () => {
 
             <div className='text-[#31255e]'>
 
-              <BiQrScan className='text-[3rem]' />
+              <BiQrScan onClick={handleCamera} className='text-[3rem]' />
 
             </div>
 
@@ -88,7 +97,7 @@ const Navbar = () => {
 
           {/* fitlight */}
 
-          <a href='/nutrionist' className={`relative flex flex-col items-center group hover:text-accent transition-all duration-300`} >
+          <a href='/fitlight' className={`relative flex flex-col items-center group hover:text-accent transition-all duration-300`} >
 
             <div className='absolute bottom-[50px] hidden xl:group-hover:flex'>
 
@@ -110,7 +119,7 @@ const Navbar = () => {
 
           {/* membership */}
 
-          <a href='/nutrionist' className={`relative flex flex-col items-center group hover:text-accent transition-all duration-300`} >
+          <a href='/membership' className={`relative flex flex-col items-center group hover:text-accent transition-all duration-300`} >
 
             <div className='absolute bottom-[50px] hidden xl:group-hover:flex'>
 
@@ -135,7 +144,7 @@ const Navbar = () => {
 
       </nav>
 
-      {/* Mobile */}
+      {/* Mobile Navbar */}
 
       <nav className='sm:hidden flex-col items-center gap-y-4 fixed h-max bottom-4 mt-auto z-50 top-0 left-0 w-full md:px-0 px-2 flex'>
 
@@ -209,7 +218,7 @@ const Navbar = () => {
 
               <div className='text-[1.5rem] sm:text-[2.1rem] text-[#31255e]'>
 
-                <BiQrScan className='text-[2.7rem] sm:text-[2.3rem]' />
+                <BiQrScan onClick={handleCamera} className='text-[2.7rem] sm:text-[2.3rem]' />
 
               </div>
 
@@ -220,7 +229,7 @@ const Navbar = () => {
 
             {/* fitlight */}
 
-            <a href='/nutrionist' className={`relative flex flex-col items-center group hover:text-accent transition-all duration-300`} >
+            <a href='/fitlight' className={`relative flex flex-col items-center group hover:text-accent transition-all duration-300`} >
 
               <div className='absolute bottom-[50px] hidden xl:group-hover:flex'>
 
