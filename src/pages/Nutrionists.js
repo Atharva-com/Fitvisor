@@ -35,7 +35,7 @@ const Nutrionists = () => {
         </div>
 
 
-        <div className="flex flex-col items-center justify-center lg:my-[5.5rem] sm:my-[3.5rem] my-6 pb-8">
+        <div className="flex flex-col items-center justify-center lg:my-[5.5rem] sm:my-[3.5rem] my-6 pb-24 sm:pb-20 md:pb-16 lg:pb-8">
 
           <div className="flex flex-wrap flex-col items-center text-center gap-y-4 mt-0 mb-6 sm:mb-10 lg:mb-14">
 
@@ -45,9 +45,9 @@ const Nutrionists = () => {
 
           <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 lg:gap-12">
 
-            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+            <div className='flex flex-col gap-y-4 p-2 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg">
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 sm:border border-white rounded-lg">
 
                 {/* <!-- Left Div --> */}
                 <div class="flex flex-col items-center justify-center">
@@ -87,9 +87,9 @@ const Nutrionists = () => {
 
             {/* <!-- Second Div --> */}
 
-            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+            <div className='flex flex-col gap-y-4 p-2 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg">
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 sm:border border-white rounded-lg">
 
                 {/* <!-- Left Div --> */}
                 <div class="flex flex-col items-center justify-center">
@@ -131,9 +131,9 @@ const Nutrionists = () => {
 
             {/* <!-- Third Div --> */}
 
-            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+            <div className='flex flex-col gap-y-4 p-2 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg" >
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 sm:border border-white rounded-lg" >
 
                 {/* <!-- Left Div --> */}
                 <div class="flex flex-col items-center justify-center">
@@ -175,9 +175,9 @@ const Nutrionists = () => {
 
             {/* <!-- Fourth Div --> */}
 
-            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+            <div className='flex flex-col gap-y-4 p-2 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg">
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 sm:border border-white rounded-lg">
 
                 {/* <!-- Left Div --> */}
                 <div class="flex flex-col items-center justify-center">
@@ -219,9 +219,9 @@ const Nutrionists = () => {
 
             {/* <!-- Fifth Div --> */}
 
-            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }} >
+            <div className='flex flex-col gap-y-4 p-2 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }} >
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg" >
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 sm:border border-white rounded-lg" >
 
                 {/* <!-- Left Div --> */}
                 <div class="flex flex-col items-center justify-center">
@@ -263,9 +263,9 @@ const Nutrionists = () => {
 
             {/* <!-- Sixth Div --> */}
 
-            <div className='flex flex-col gap-y-4 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
+            <div className='flex flex-col gap-y-4 p-2 md:p-4 rounded-lg' style={{ background: 'linear-gradient(170.42deg, rgba(157, 135, 237, 0.88) 3.29%, rgba(107, 73, 231, 0.95) 125.3%)', boxShadow: '0px 4px 7px 0px #00000040' }}>
               {/* <!-- First Div --> */}
-              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 border border-white rounded-lg" >
+              <div class="p-4 space-y-4 flex flex-col md:flex-row items-center justify-center gap-x-8 sm:border border-white rounded-lg" >
 
                 {/* <!-- Left Div --> */}
                 <div class="flex flex-col items-center justify-center">
@@ -287,7 +287,7 @@ const Nutrionists = () => {
                 {/* <!-- Right Div --> */}
                 <div className='flex flex-col gap-y-2'>
                   {/* <!-- Highlighted Information --> */}
-                  <h2 class="text-xl font-bold">Dr. Sheikh Abdullah</h2>
+                  <h2 class="text-xl font-bold">Dr. Sheikh</h2>
                   <p class="text-gray-200">English, Urdu</p>
                   <p class="text-gray-200">5+ years of experience</p>
                   <p class="text-gray-200 font-semibold">Price: ₹500/hr</p>

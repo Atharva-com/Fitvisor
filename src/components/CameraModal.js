@@ -1,16 +1,17 @@
 import React, { useRef, useCallback, useState } from 'react';
 import Webcam from 'react-webcam';
 import Modal from './Modal'
-import useCartModal from '../helpers/useCameraModal'
+import useCameraModal from '../helpers/useCameraModal'
 import { GrClose } from 'react-icons/gr'
 import { BsCircleFill } from 'react-icons/bs'
 import { MdFlipCameraAndroid } from 'react-icons/md'
 import Cropper from 'react-easy-crop';
 import { DotSpinner } from '@uiball/loaders'
+// import { setTimeout } from 'timers/promises';
 
 const CameraModal = () => {
 
-    const { onClose, isOpen } = useCartModal()
+    const { onClose, isOpen } = useCameraModal()
     const [redirect, setRedirect] = useState(false)
     const [cameraIsActive, setCameraIsActive] = useState(false);
     const [capturedImageState, setCapturedImageState] = useState(false);
@@ -68,9 +69,7 @@ const CameraModal = () => {
         );
         // Restart the camera with the new facing mode
         setCameraIsActive(false);
-        setTimeout(() => {
-            setCameraIsActive(true);
-        }, 100);
+        setCameraIsActive(true)
     };
 
     const onCropChange = (crop) => {
@@ -198,31 +197,6 @@ const CameraModal = () => {
                     </div>
                 )}
 
-                {displayCroppedImage && (
-                    <div className="absolute inset-0 flex items-center justify-center" id="cropped-image">
-                        <img src={capturedImage} alt="Cropped" className="max-h-full max-w-full" />
-                        <button
-                            onClick={setDisplayCroppedImage(false)}
-                            className="absolute top-4 right-4 bg-[#31255e] text-white px-2 py-1 rounded-full transition-all duration-300"
-                        >
-                            <GrClose className='text-xl' />
-                        </button>
-                    </div>
-                )}
-                {/* {capturedImageState && (<div className="h-screen w-full sm:w-[80vw] flex justify-center items-center absolute xl:top-[3%] top-0 left-0 right-0 bottom-0 m-auto">
-
-                    <div className='absolute z-[51] left-28'>
-
-                        <img src={capturedImage} alt="Captured" className="h-auto mx-auto rounded-lg" />
-
-                        <button onClick={() => { setCapturedImageState(false) }} className="absolute top-4 right-4 bg-[#31255e] text-white px-2 py-1 rounded-full hover:bg-[#4a3f75] transition-all duration-300">
-                            <GrClose />
-                        </button>
-
-                    </div>
-
-
-                </div>)} */}
 
                 {cameraIsActive ? (<button onClick={captureImage} className="text-white relative overflow-hidden group z-50 bg-[#31255e] font-medium py-2 rounded-2xl px-12 focus:outline-none text-lg transition-all ease-out duration-300">
 

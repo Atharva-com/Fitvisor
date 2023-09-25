@@ -2,13 +2,12 @@ import React from 'react'
 import HomeCarousel from './HomeCarousel'
 import Header from './Header'
 import background from '../images/blob-haikei-removebg-preview.png'
-import img from '../images/scanning image.png'
+import img from '../images/img1 home (2).jpeg'
 import circle from '../images/Ellipse 17.png'
 
 const Home = () => {
   return (
     <div className='mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32'>
-
       <Header />
 
       <div className='mt-32 flex sm:hidden'>
@@ -33,15 +32,15 @@ const Home = () => {
 
       </div>
 
-      <div class="flex flex-col items-center justify-center md:items-start md:flex-row p-4 sm:my-0 my-10">
+      <div class="flex flex-col items-center justify-center md:flex-row p-4 my-10">
         {/* <!-- Left Side (Image) --> */}
         <div class="md:w-1/2 flex justify-center md:justify-start">
-          <img src={img} alt="Fitlight" class="w-full md:w-[80%] h-auto" />
+          <img src={img} alt="Fitlight" class="w-full md:w-[75%] h-auto" />
         </div>
 
         {/* <!-- Right Side (Heading and Paragraph) --> */}
         <div class="md:w-1/2 lg:ml-4 mt-4 md:mt-0">
-          <h1 class="text-3xl md:text-[2rem] lg:text-4xl font-semibold mb-4 text-gray-800 sm:text-white tracking-wider ">Elevate Your
+          <h1 class="text-3xl md:text-[2rem] lg:text-4xl font-semibold mb-16 text-gray-800 sm:text-white tracking-wider ">Elevate Your
 
             <span className='sm:text-[#31255e] text-gray-600 mr-2'>
 
@@ -51,9 +50,10 @@ const Home = () => {
 
             with Fitlight</h1>
 
-          <p class="text-[17px] lg:text-[20px] sm:text-[#31255e] text-gray-600 font-semibold tracking-wide md:leading-6 lg:leading-8">Elevate your well-being with Fitlight: Scan product ingredients, receive harm assessments, and access personalized diet and health mentoring. Connect with our network of gyms for a holistic journey to wellness.</p>
+          <p class="text-[17px] lg:text-[22px] sm:text-[#31255e] text-gray-600 font-medium tracking-wide md:leading-6 lg:leading-8">Elevate your well-being with Fitlight: Scan product ingredients, receive harm assessments, and access personalized diet and health mentoring.</p>
         </div>
       </div>
+
       <HomeCarousel />
     </div>
   )

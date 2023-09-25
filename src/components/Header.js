@@ -75,10 +75,15 @@ const Header = () => {
 
                 <div className='flex gap-x-2 items-center'>
 
-                    <div className='sm:relative sm:top-0 sm:left-0 absolute top-[7rem] left-[2rem]'>
-                        {login ? <h1 className='text-white font-semibold text-xl font-mono '>Hello, there👋</h1> : <Link to='/login' type="button" class="focus:outline-none text-white bg-[#31255e] hover:bg-[#4c3a8f] font-medium rounded-lg text-md px-5 py-2 mr-2 mb-2">Login</Link>}
+                    {login ? (<div className='sm:relative sm:top-0 sm:left-0 absolute top-[7rem] left-[2rem]'>
+                        <h1 className='text-white font-semibold text-xl font-mono '>Hello, there👋</h1>
+                    </div>) :
+                        <div className='sm:relative top-0 left-0'>
+                            <Link to='/login' type="button" class="focus:outline-none text-white bg-[#31255e] hover:bg-[#4c3a8f] font-medium rounded-lg text-md px-5 py-2 mr-2 mb-2">Login</Link>
+                        </div>
+                    }
 
-                    </div>
+
 
                     {login && <MdOutlineAccountCircle className='text-[2.3rem] text-white cursor-pointer' onMouseEnter={() => { setisOpen(true) }} onMouseLeave={() => { setisOpen(false) }} />}
 

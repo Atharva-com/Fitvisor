@@ -150,7 +150,7 @@ const Navbar = () => {
 
         <div className='flex w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 items-center justify-between px-8 md:px-16 h-[60px] sm:h-[60px] py-6 sm:bg-white/20 backdrop-blur-sm backdrop-filter text-3xl xl:text-xl rounded-full' style={{ background: 'linear-gradient(178.28deg, #B7A6F2 1.46%, #8160FB 195.63%)' }}>
 
-          <div className='flex gap-x-8'>
+          <div className='flex gap-x-12'>
 
             {/* home */}
 
@@ -225,7 +225,8 @@ const Navbar = () => {
             </div>
 
           </div>
-          <div className='flex gap-x-8'>
+
+          <div className='flex gap-x-12'>
 
             {/* fitlight */}
 
